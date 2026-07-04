@@ -96,3 +96,6 @@ This course introduces 4 essential parts of Computer Science:
 
 # 授課大綱
 [115上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=520003&lang=zh-tw)
+
+# Remark
+黃文珍 0958008962
