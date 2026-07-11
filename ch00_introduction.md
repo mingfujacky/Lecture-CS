@@ -75,16 +75,32 @@ style: |
 - 1985, Microsoft launch Windows 1.0
 ![w:200 MSDOS 1.0](asset/image/ch00_MSDOS1.0.jpeg)
 
-# Internet and World Wide Web (WWW)
-[![Internet and WWW](https://i.ytimg.com/vi/M-01ii4zX_k/default.jpg)](https://youtu.be/M-01ii4zX_k?si=RToY4p15JAIXuwAB)
-- 1969, ARPANET, an early computer network to transmit sensitive military data.
-- 1989, World Wide Web (WWW), Tim Berners-Lee.
-- 1993, Browsers: Mosaic, Netscape Navigator and Internet Explorer.
-- 2000, dot com company boom and bust
-- 2004, social media platforms: YouTube, Facebook
-- 2007, smartphones, iPhone and Android
-- 2010, IoT (internet of things)
-- 2023, AI ChatGPT
+# The Evolution of the Internet (1)
+[![Internet and WWW](https://i.ytimg.com/vi/M-01ii4zX_k/mqdefault.jpg)](https://youtu.be/M-01ii4zX_k?si=RToY4p15JAIXuwAB)
 
-# Common Architecture of Computers
-The arithmetic logic unit and the control unit together are called the Central Processing Unit (CPU). CPU)。
+# The Evolution of the Internet (2)
+- 1969, ARPANET, a U.S. research network funded by ARPA.
+- 1983, TCP/IP becomes the common Internet protocol.
+- 1989, Tim Berners-Lee proposes the World Wide Web at CERN.
+- 1993, Mosaic popularizes graphical web browsing; the Web is released royalty-free.
+- 1994–1995, Netscape Navigator and Internet Explorer.
+- 2000–2001, dot-com bubble boom and bust.
+- 2004–2005, social media expands: Facebook and YouTube.
+- 2007–2008, smartphones and app stores: iPhone, Android, mobile apps.
+- 2010s, IoT, cloud computing, and mobile broadband expand.
+- 2022–2023, ChatGPT launches and generative AI becomes mainstream.
+
+# General Architecture of Computers
+The general architecture of today's computers is based on the von Neumann Model (馮紐曼模式), which is based on the concept of **stored program**, including four subsystems
+- Memory: store data and programs
+- Arithmetic Logic Unit (ALU): perform arithmetic and logical processing
+- Control Unit (CU): direct other subsystems and tells them what to do.
+- Input／Output: keyboard, mouse, screen, printer
+
+> ALU + CU = CPU (Central processing Unit)
+
+# von Neumann Model
+![w:600 von Neumann Model](asset/image/ch00_von_neumann_model.png)
+
+[![von Neumann Model](https://i.ytimg.com/vi/VTabBKNdlFc/default.jpg)](https://youtube.com/shorts/VTabBKNdlFc?si=S8mdNVJBDVd6PTlP)
+
