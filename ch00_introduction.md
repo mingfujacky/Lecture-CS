@@ -48,32 +48,31 @@ style: |
   }
 ---
 # Introduction to Computer
-> Computer (計算機 / 電腦) is a tool to support people to compute.
-
-> A computer is a programmable device designed to store, retrieve, and process data to solve complex computational problems.
+> Computer is a tool to support people to compute.
 
 > A computer is a machine that can be programmed to automatically carry out sequences of computations such as arithmetic and logical operations. (Wikipedia)
 
 [![What is a Computer?](https://i.ytimg.com/vi/lqChlibJYpA/mqdefault.jpg)](https://youtu.be/lqChlibJYpA?si=PzRWP_kgrMWdEgOn)
 
-# Memorabilia of Computer
+# 計算機發展的重要轉折點
 - 3000 BCE, Abacus (算盤)
-- 1642, Blaise Pascal, mechanical adding machine (加法器)
-- 1801, Joseph-Marie Jacquard, Jacquard loom (緹花織布機), use punch cards to control the weaving of patterns, introducing programming concept and data storage.
-- 1937, Alan Turing, Turing machine (圖靈機), 證明了只要一組簡單的讀寫規則，加上無限的記憶體(紙帶)，就能夠執行任何複雜的演算法
-[![圖靈機](https://i.ytimg.com/vi/fBqVKCyvXbM/mqdefault.jpg)](https://youtu.be/fBqVKCyvXbM?si=NU4m5K9lqVmwW1nB)
+- 1642, Blaise Pascal, mechanical adding machine (機械式加法器)
+- 1801, Joseph-Marie Jacquard, Jacquard loom (緹花織布機), use punch cards (打孔卡片) to control the patterns, introducing programming concept and data storage.
+- 1937, Alan Turing, Turing machine (圖靈機), 圖靈機不是一個真正的「機器」，而是「理論數學」的模型。證明了只要一組簡單的讀寫規則，加上無限的記憶體(紙帶)，就能夠執行任何複雜的演算法.
 
-# Evolution of Computers
-![w:900 evolutions of computers](asset/image/ch00_computer_generations.png)
+# 現代計算機的演進
+計算機演進的核心為硬體電子化與運算二進位化，讓資料的儲存計算傳輸達到最佳效能
+![w:800 evolutions of computers](asset/image/ch00_computer_generations.png)
 
 # Personal Computer (PC)
 - 1975, Altair 8800, the first personal computer (PC)
-- 1977, Apple II, the first successful personal computer (PC)
-- 1981, IBM open the PC architecture, PC become the most mainstream product
+- ![w:400 PC Story](asset/image/ch00_pc_story.png)
+
+- [![PC Story](https://i.ytimg.com/vi/Aq1IANgRV0k/mqdefault.jpg)](https://youtu.be/Aq1IANgRV0k?si=dkngmyoSRG-UIhvi)
+
 - 1981, Microsoft launch MS-DOS 1.0 (Microsoft Disk Operating System)
-- 1984, Apple Macintosh, the first personal computer (PC) with GUI
 - 1985, Microsoft launch Windows 1.0
-![w:200 MSDOS 1.0](asset/image/ch00_MSDOS1.0.jpeg)
+
 
 # The Evolution of the Internet (1)
 [![Internet and WWW](https://i.ytimg.com/vi/M-01ii4zX_k/mqdefault.jpg)](https://youtu.be/M-01ii4zX_k?si=RToY4p15JAIXuwAB)
