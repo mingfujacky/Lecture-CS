@@ -54,15 +54,18 @@ style: |
 
 [![What is a Computer?](https://i.ytimg.com/vi/lqChlibJYpA/mqdefault.jpg)](https://youtu.be/lqChlibJYpA?si=PzRWP_kgrMWdEgOn)
 
-# 計算機發展的重要轉折點
+# Computing Tool Foundation
 - 3000 BCE, Abacus (算盤)
 - 1642, Blaise Pascal, mechanical adding machine (機械式加法器)
 - 1801, Joseph-Marie Jacquard, Jacquard loom (緹花織布機), use punch cards (打孔卡片) to control the patterns, introducing programming concept and data storage.
 - 1937, Alan Turing, Turing machine (圖靈機), 圖靈機不是一個真正的「機器」，而是「理論數學」的模型。證明了只要一組簡單的讀寫規則，加上無限的記憶體(紙帶)，就能夠執行任何複雜的演算法.
 
-# 現代計算機的演進
-計算機演進的核心為硬體電子化與運算二進位化，讓資料的儲存計算傳輸達到最佳效能
-![w:800 evolutions of computers](asset/image/ch00_computer_generations.png)
+# Modern Computer Development
+The core of modern computer evolution lies in the electronization of hardware and the adoption of binary computation, enabling optimal efficiency in data storage, processing, and transmission.
+![w:700 evolutions of computers](asset/image/ch00_computer_generations.png)
+
+# Moore's Law (摩爾定律)
+- Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, with minimal increase in cost.
 
 # Personal Computer (PC)
 - 1975, Altair 8800, the first personal computer (PC)
@@ -81,7 +84,7 @@ style: |
 - 1969, ARPANET, a U.S. research network funded by ARPA.
 - 1983, TCP/IP becomes the common Internet protocol.
 - 1989, Tim Berners-Lee proposes the World Wide Web at CERN.
-- 1993, Mosaic popularizes graphical web browsing; the Web is released royalty-free.
+- 1993, Mosaic popularizes graphical web browsing
 - 1994–1995, Netscape Navigator and Internet Explorer.
 - 2000–2001, dot-com bubble boom and bust.
 - 2004–2005, social media expands: Facebook and YouTube.
