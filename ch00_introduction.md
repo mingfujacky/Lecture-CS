@@ -65,7 +65,7 @@ The core of modern computer evolution lies in the electronization of hardware an
 ![w:700 evolutions of computers](asset/image/ch00_computer_generations.png)
 
 # Moore's Law (摩爾定律)
-- Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, with minimal increase in cost.
+- Moore's law is the observation that the number of transistors in an integrated circuit (IC) doubles about every two years, but the price remains the same.
 
 # Personal Computer (PC)
 - 1975, Altair 8800, the first personal computer (PC)
