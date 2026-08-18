@@ -63,21 +63,22 @@ style: |
 - Registers: temporary storage of information within the CPU
 - Bus: transfer bit patterns (data, address, control) between CPU and main memory
 
-![w:600](asset/image/ch02_cpu_bus_memory_0.png)
+![w:600](asset/image/ch03_cpu_bus_memory_0.png)
 
 # Linkage Architecture between CPU and Memory
-![w:600](asset/image/ch02_cpu_bus_memory_1.jpg)
+![w:600](asset/image/ch03_cpu_bus_memory_1.jpg)
 
 # Central Processing Unit (CPU)
 CPU is the brain of a computer, a chip with extremely complex circuits, which is used to execute program instructions stored in memory and control the processing and operation of digital data. It consists of
 - Arithmetic Logic Unit (ALU)
 - Control Unit (CU)
 - Registers
+- Cache
 
 # Arithmetic Logic Unit
 - Perform mathematical operations such as addition, subtraction, multiplication and division
 - Perform logical operations such as AND, OR, NOT and XOR (eXclusive OR)
-![w:300](asset/image/ch02_logical_operations.png)
+![w:300](asset/image/ch03_logical_operations.png)
 
 # Control Unit
 - Control the flow of computer execution programs.
@@ -86,13 +87,29 @@ CPU is the brain of a computer, a chip with extremely complex circuits, which is
 - For example, it moves the program instructions that need to be executed from memory to the register, decodes the instructions, and then hands them over to the ALU for operation, and then puts the results back into register or memory
 
 # Register
-- CPU has a very small storage device, called a register, that can temporarily store instructions or data.
+- Registers are built directly into the processor core to temporarily store instructions or data. Registers offer the fastest speed and highest unit cost, but hold very little data.
 - Registers can be accessed faster than the main memory, which can greatly increase the performance of the CPU.
 - Two types of register
   - General-purpose register
   - Special-purpose register
-    - Instruction Register: hold the current instruction while the computer decodes and executes it
-    - Program Counter: store the memory address of the next command the computer needs to run
+    - Instruction register: hold the current instruction while the computer decodes and executes it
+    - Program counter: store the memory address of the next command the computer needs to run
+
+# Cache
+- von Neumann bottleneck: No matter how fast the CPU and memory are, the overall system speed will ultimately be limited by the speed of the bus.
+- Cache improves CPU performance by keeping frequently or recently used data and instructions close to the CPU, reducing expensive accesses to main memory.
+- In modern processor architectures, the entire cache hierarchy (L1, L2, and usually L3) is integrated directly onto the silicon die of the CPU to minimize latency and maximize memory bandwidth.
+
+# Cache Hierarchy
+| Cache Level | Physical Location | Typical Size | Relative Speed|
+| :--- | :--- | :--- | :--- |
+| **L1 Cache** | Inside CPU Core (On-Die) | 32 KB – 64 KB | Fastest (~1 ns) |
+| **L2 Cache** | On-Die (Near Core)  | 512 KB – 2 MB+ | Very Fast (~3–4 ns) |
+| **L3 Cache** | On-Die (Shared)  | 8 MB – 96 MB+ | Fast (~10–15 ns) |
+
+# Cache Location
+![w:300](asset/image/ch03_cache_location.jpeg)
+
 
 # Bus
 In the architecture of the linkage between CPU and memory, there are some transmission tools for transmitting electronic signals, called bus
@@ -112,10 +129,44 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 - Memory is divided into various types based on speed, unit price, and attributes.
 - Memory is used to store data and the results of calculations.
 - In the von Neumann model, the memory stores both programs and data.
-![w:600](asset/image/ch02_memory_types.png)
+![w:600](asset/image/ch03_memory_types.png)
 
-# Registers and Cache
-- Registers: Built directly into the processor core. They offer the fastest speed and highest unit cost, but hold very little data.
-- L1, L2, L3 Cache: Small, very fast memory close to the CPU. They store data the processor uses most often.
+# Main Memory Addressing
+- Each location in main memory has an address to access its contents
+![w:600](asset/image/ch03_memory_address.png)
+- Addresses are represented in 16 bits, with a maximum of 2<sup>16</sup> = 65,536 addresses
+
+# More Main Memory, More Execution Speed
+- Main memory is slower than cache, but still faster than hard drives.
+- The larger the memory, the more programs and data can be loaded from the hard drive into memory, resulting in higher CPU execution efficiency.
+- If the program or data is too large to load into limited memory, the CPU must read data or programs from the hard drive, which slows down the entire process.
+
+
+# Memory: RAM & ROM
+- RAM (Random Access Memory): Once power off, the data disappears
+- ROM (Read-Only Memory): After power off, the ROM can retain its data and can be used to store programs used for boot.
+- Both can read data randomly, but RAM allows users to freely rewrite content.
+
+![bg right 50%](asset/image/ch03_memory_hierarchy.png)
+
+# RAM: SRAM & DRAM
+- SRAM is fast and expensive → Cache
+- DRAM is slower and cheaper → Main Memory
+
+| Feature | DRAM | SRAM |
+|---|---|---|
+| Full Name | Dynamic RAM | Static RAM |
+| Speed | X | 4X |
+| Cost | Cheaper | More expensive |
+| Capacity | 4C | C |
+| Refresh | Required | Not required |
+| Storage Cell | 1 transistor + 1 capacitor | Typically 6 transistors |
+| Volatile | Yes | Yes |
+
+# ROM: PROM, EPROM, EEPROM
+- PROM (Programmable ROM): Write once
+- EPROM (Erasable Programmable ROM): Erase with UV light
+- EEPROM (Electrically Erasable Programmable ROM): Erase electrically
+> Flash memory is essentially an evolution of EEPROM. It makes for mass-storage devices such as SSDs, USB flash drives, and memory cards.
 
 
