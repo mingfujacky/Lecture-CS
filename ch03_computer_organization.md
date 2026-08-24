@@ -55,7 +55,7 @@ style: |
 - Storage device
 
 # von Neumann Model
-![w:600 von Neumann Model](asset/image/ch00_von_neumann_model.png)
+![w:600 von Neumann Model](asset/image/ch03_von_neumann_model.webp)
 
 # CPU Basics
 - Arithmetic/Logic Unit (ALU): perform operations (+, -, AND, XOR) on data
@@ -78,7 +78,13 @@ CPU is the brain of a computer, a chip with extremely complex circuits, which is
 # Arithmetic Logic Unit
 - Perform mathematical operations such as addition, subtraction, multiplication and division
 - Perform logical operations such as AND, OR, NOT and XOR (eXclusive OR)
-![w:300](asset/image/ch03_logical_operations.png)
+
+|p|q|p and q|p or q|p xor q|not p|
+|-|-|-------|------|-------|-----|
+|T|T|T      |T     |F      |F    |
+|T|F|F      |T     |T      |F    |
+|F|T|F      |T     |T      |T    |
+|F|F|F      |F     |F      |T    |
 
 # Control Unit
 - Control the flow of computer execution programs.
@@ -129,11 +135,20 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 - Memory is divided into various types based on speed, unit price, and attributes.
 - Memory is used to store data and the results of calculations.
 - In the von Neumann model, the memory stores both programs and data.
-![w:600](asset/image/ch03_memory_types.png)
+![w:600](asset/image/ch03_memory_types_3.webp)
 
 # Main Memory Addressing
 - Each location in main memory has an address to access its contents
-![w:600](asset/image/ch03_memory_address.png)
+
+| Address | Content |
+|---|---|
+|0000 0000 0000 0000| 10110101 |
+|0000 0000 0000 0001| 01101011 |
+|0000 0000 0000 0010| 11110001 |
+|.....| ..... |
+|1111 1111 1111 1111| 01010101 |
+
+
 - Addresses are represented in 16 bits, with a maximum of 2<sup>16</sup> = 65,536 addresses
 
 # More Main Memory, More Execution Speed
