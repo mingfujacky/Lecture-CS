@@ -211,3 +211,8 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 1. **Fetch**: The CPU fetches the instruction from memory at the address specified by the program counter (PC) and stores it in the instruction register (IR).
 2. **Decode**: The control unit decodes the instruction in the IR to determine what operation to perform and what operands are needed.
 3. **Execute**: The CPU performs the operation specified by the instruction, which may involve reading/writing data from/to memory or performing calculations in the ALU. After execution, the program counter is updated to point to the next instruction, and the cycle repeats.
+
+# A Simplified Machine Language - Vole
+- 16 general-purpose registers (0x0 - 0xF). Each of them is assigned a four-bit pattern (0000 to 1111) that represents its register number 
+- Each register is one byte (8 bits) long
+- 256 cells in the Vole's main memory, each cell is assigned a address from 0 to 255, 0x00 - 0xFF, 00000000 - 11111111
