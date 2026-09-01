@@ -116,7 +116,6 @@ CPU is the brain of a computer, a chip with extremely complex circuits, which is
 # Cache Location
 ![w:300](asset/image/ch03_cache_location.jpeg)
 
-
 # Bus
 In the architecture of the linkage between CPU and memory, there are some transmission tools for transmitting electronic signals, called bus
 
@@ -184,4 +183,31 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 - EEPROM (Electrically Erasable Programmable ROM): Erase electrically
 > Flash memory is essentially an evolution of EEPROM. It makes for mass-storage devices such as SSDs, USB flash drives, and memory cards.
 
+# Acer Aspire XC-1860 桌上型電腦 
+> [ACER Aspire XC-1860](https://store.acer.com/zh-tw/xc-1860)
 
+- OS: Windows 11 Home
+- CPU: Intel Core Ultra 5 225 (U5-225)
+  - 10 cores, base clock 3.30 GHz
+  - 20MB L3 cache
+- Main memory: 16G * 1 DDR5 SDRAM
+- GPU: iGPU (integrated GPU) or Intel UHD
+  - Built onto CPU chip
+  - Share DDR5 SDRAM
+- Chipset: Intel H810
+
+# Acer Aspire XC-1860 桌上型電腦 (continued) 
+- SSD: 1TB PCIe 4.0
+- Network: Gigabit Ethernet, Wi-Fi 5/6
+- I/O ports: PCIe x16 slot, USB 3.0 Type-A / Type-C, USB 2.0 Type-A, HDMI, DisplayPort
+
+# Program Execution
+<div class="grid">
+    <img src="asset/image/ch03_machine_cycle_1.png">
+    <img src="asset/image/ch03_machine_cycle_2.webp">
+</div>
+
+# Fetch-Decode-Execute Cycle
+1. **Fetch**: The CPU fetches the instruction from memory at the address specified by the program counter (PC) and stores it in the instruction register (IR).
+2. **Decode**: The control unit decodes the instruction in the IR to determine what operation to perform and what operands are needed.
+3. **Execute**: The CPU performs the operation specified by the instruction, which may involve reading/writing data from/to memory or performing calculations in the ALU. After execution, the program counter is updated to point to the next instruction, and the cycle repeats.
