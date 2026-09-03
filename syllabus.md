@@ -50,7 +50,7 @@ style: |
 # [520003] 計算機概論
 ##  Introduction to Computer Science (CS)
 > 課程講師：林志偉 (jacky.jw.lin@nycu.edu.tw)
-> 課程助教：xxxx (xxxx@nycu.edu.tw)
+> 課程助教：吳長紘 (hitter.wu@gmail.com), 楊羿瑄 (sammyyang1113@gmail.com)
 > 上課書籍：計算機概論 v21, 趙坤茂, 張雅惠, 黃俊穎, 黃寶萱, 2026, 全華
 > 教材網站：
   - https://github.com/mingfujacky/Lecture-CS.git
@@ -80,19 +80,16 @@ This course introduces 4 essential parts of Computer Science:
 
 
 # 評分方式
-- (10%) 課堂參與
-  > 5次點名 
-  > 正常出席得 2分, 有請假單得 1分, 無故缺席得 0分
 - (30%) 課後作業: 6次作業 (不受理遲交)
-- (30%) 期中考試 (2026/10/30)
-- (30%) 期末考試 (2026/12/18)
+- (30%) 期中考試
+- (40%) 期末考試
 > 除「成績計算」或「登錄」有誤外，請同學勿以個人理由請求調整成績
 
 # 期中期末考試試場規定
 > 1. 按照助教安排進入考場入座，不得攜帶書本及參考資料
 > 2. 不得使用手機，請將手機放置在監考人員的可視範圍內，如桌上或教室前面
 > 3. 攜帶學生證或其他可以確認身份的證件
-> 4. 考試時間為九十分鐘
+> 4. 考試時間九十分鐘
 
 # 授課大綱
 [115上學期](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=520003&lang=zh-tw)
