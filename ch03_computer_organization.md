@@ -212,7 +212,42 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 2. **Decode**: The control unit decodes the instruction in the IR to determine what operation to perform and what operands are needed.
 3. **Execute**: The CPU performs the operation specified by the instruction, which may involve reading/writing data from/to memory or performing calculations in the ALU. After execution, the program counter is updated to point to the next instruction, and the cycle repeats.
 
-# A Simplified Machine Language - Vole
-- 16 general-purpose registers (0x0 - 0xF). Each of them is assigned a four-bit pattern (0000 to 1111) that represents its register number 
-- Each register is one byte (8 bits) long
-- 256 cells in the Vole's main memory, each cell is assigned a address from 0 to 255, 0x00 - 0xFF, 00000000 - 11111111
+# Vole: A Simplified Computer
+- 16 general-purpose registers, numbering from 0x0 (0000) to 0xF (1111).
+- 256 cells in main memory, each cell is assigned a address from 0 to 255, 0x00 - 0xFF, 00000000 - 11111111
+- Each register and memory cell store one byte (8 bits) program or data
+![w:600](asset/image/ch03_architecture_of_Vole.png)
+
+# Machine Language of Vole
+- Each instruction is 16-bit long, consisting of an 4-bit opcode and an 12-bit operand. The opcode specifies the operation to be performed, while the operand specifies the register or memory address involved in the operation.
+![w:600](asset/image/ch03_machine_language_1.png)
+
+# Decoding the Machine Language 35A7
+![w:600](asset/image/ch03_machine_language_2.png)
+
+# Adding Values Stored in Memory
+| Encoded instruction | Translation |
+|---------------------|-------------|
+| 156C | Load register 5 with the bit pattern found in the memory cell at address 6C.|
+| 166D | Load register 6 with the bit pattern found in the memory cell at address 6D.|
+| 5056 | Add the contents of register 5 and 6 as though they were two's complement representation and leave the result in register 0.|
+| 306E | Store the contents of register 0 in the memory cell at address 6E.|
+| C000 | Halt the execution of the program.|
+
+# An Example of Program Execution in Vole (1/3)
+- A program is stored in main memory, starting at address 0xA0. The program consists of a series of instructions that the CPU will execute sequentially. 
+- Each instruction is represented in machine language, which is a binary representation of the operation to be performed and the operands involved.
+![w:500](asset/image/ch03_program_execution_1.png)
+
+# An Example of Program Execution in Vole (2/3)
+- Perform the fetch step: The CPU fetches the instruction from memory at address 0xA0. The instruction is loaded into the instruction register (IR) and program counter (PC) is incremented to A2.
+<div class="grid">
+    <img src="asset/image/ch03_program_execution_2.png">
+    <img src="asset/image/ch03_program_execution_3.png">
+</div>
+
+# An Example of Program Execution in Vole (3/3)
+- Perform the decode step: CPU decodes the instruction in the IR to determine what operation to perform and what operands are needed. In this case, the instruction is a load instruction that specifies that the contents of memory address 0x6C should be loaded into register 5.
+- Perform the execute step: The CPU performs the operation specified by the instruction, which involves reading the contents of memory address 0x6C and loading it into register 5.
+
+
