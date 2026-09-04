@@ -117,7 +117,7 @@ CPU is the brain of a computer, a chip with extremely complex circuits, which is
 ![w:300](asset/image/ch03_cache_location.jpeg)
 
 # Bus
-In the architecture of the linkage between CPU and memory, there are some transmission tools for transmitting electronic signals, called bus
+In the architecture of the linkage between CPU and memory, there are some transmission tools for transmitting electronic signals, called bus.
 
 | Bus | Purpose | Typical Direction |
 |---|---|---|
@@ -182,6 +182,25 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 - EPROM (Erasable Programmable ROM): Erase with UV light
 - EEPROM (Electrically Erasable Programmable ROM): Erase electrically
 > Flash memory is essentially an evolution of EEPROM. It makes for mass-storage devices such as SSDs, USB flash drives, and memory cards.
+
+# Beyond Von Neumann Architecture
+- We use bus (system bus) to illustrate the communication between CPU and main memory under Von Neumann architecture. It is a conceptual model to explain the transmission of address, control, and data . 
+- In reality, modern PC hardware has evolved into multiple specialized point-to-point interconnects, which are more efficient than a single system bus.
+![w:600](asset/image/ch03_cpu_bus_memory_0.png)
+
+# Modern Intel System Architecture
+![w:600](asset/image/ch03_modern_Intel_system_2.png)
+
+# Interconnection of Modern Intel System Architecture
+| Category | Interface | Connection | Purpose |
+|---|---|---|---|
+| **Memory Interface** | DDR4 / DDR5 | CPU ↔ DRAM | Memory access |
+| **Internal High-Speed Interconnect** | PCIe | CPU ↔ GPU, SSD | Internal devices |
+| **Direct Media Interface**| DMI | CPU ↔ Chipset | Chipset communication |
+| **Peripheral Interface** | PCIe | Chipset ↔ SSD, NIC | High-speed peripheral |
+| **Peripheral Interface** | USB | Chipset ↔ USB devices | Low-speed peripheral |
+| **Display Interface** | HDMI / DisplayPort | GPU ↔ Monitor | Video & Audio |
+
 
 # Acer Aspire XC-1860 桌上型電腦 
 > [ACER Aspire XC-1860](https://store.acer.com/zh-tw/xc-1860)
