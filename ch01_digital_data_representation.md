@@ -56,8 +56,16 @@ style: |
 - Storing image
 - Storing sound
 
-# Bit and Bit Patterns
+# Bit
 - The bit (binary digit) is the most basic unit of information in computing and communication. The bit represents a logical state with one of two possible values like 0 or 1, true/false, yes/no, or on/off
+- Binary system is simple, logical and unambiguous, and it is easy to implement with digital electronic circuitry.
+
+# Binary Operations and Logical Gates
+![w:500 logical operation and gate](asset/image/ch01_logical_operation_gate.png)
+
+
+
+# Bit Patterns
 - The bit pattern is a sequence of bits used by computers to store and represent data, like text, numbers, sound, or image.
 - N bits can generate 2<sup>n</sup> different combinations to represent 2<sup>n</sup> bit patterns. 
 
