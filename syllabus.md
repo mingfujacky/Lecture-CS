@@ -52,6 +52,7 @@ style: |
 > 課程講師：林志偉 (jacky.jw.lin@nycu.edu.tw)
 > 課程助教：吳長紘 (hitter.wu@gmail.com), 楊羿瑄 (sammyyang1113@gmail.com)
 > 上課書籍：計算機概論 v21, 趙坤茂, 張雅惠, 黃俊穎, 黃寶萱, 2026, 全華
+> 上課書籍：Computer Science: An Overview v13, J. Glenn Brookshear, 2020, Pearson
 > 教材網站：
   - https://github.com/mingfujacky/Lecture-CS.git
   - https://github.com/mingfujacky/Lecture-Python.git
