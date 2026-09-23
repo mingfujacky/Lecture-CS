@@ -57,7 +57,8 @@ style: |
 - Storing sound
 
 # Bit
-- The bit (binary digit) is the most basic unit of information in computing and communication. The bit represents a logical state with one of two possible values like 0 or 1, true/false, yes/no, or on/off
+- Bit (binary digit) is the most basic unit of information in computing and communication. 
+- Bit represents a logical state with one of two possible values like 0 or 1, true/false, yes/no, or on/off
 - Binary system is simple, logical and unambiguous, and it is easy to implement with digital electronic circuitry.
 
 # Binary Operations and Logical Gates
@@ -112,12 +113,12 @@ https://docs.f5ezcode.in/~gitbook/image?url=https%3A%2F%2F3362868160-files.gitbo
 <span class="blue-text">[Lab] Convert 181<sub>10</sub> to binary </span>
 <span class="blue-text">[Lab] Convert 0.8125<sub>10</sub> to binary </span>
 
-# 二進位的循環小數
-- 雖然有限位數的二進位表示法，永遠無法精確地表示十進位的0.1，一般的情況下，可能就只好容許這種小誤差. 
-- 如果你真的非常注重浮點數的精確度，比如說核子反應爐或是太空船登陸軌跡的計算，你可以使用 Python decimal module 來控制浮點數的精確度
-![bg left:50% w:400](asset/image/ch01_二進位的循環小數.png)
+# Binary Repeating Decimals
+- Although a finite-bit binary representation can never precisely represent the decimal 0.1, in general cases, you may simply have to tolerate this small error.
+- If you are truly concerned about the precision of floating-point numbers—for example, in calculations for nuclear reactors or spacecraft landing trajectories—you can use the Python decimal module to control floating-point precision
+![bg left:40% w:300](asset/image/ch01_二進位的循環小數.png)
 
-# 二進位與十六進位的互換
+# Conversion between Binary and Hexadecimal
 <div class="grid">
     <img src="asset/image/ch01_二進位轉十六進位.png" alt="Linking relational tables">
     <img src="asset/image/ch01_十六進位轉二進位.png" alt="A relational diagram">
