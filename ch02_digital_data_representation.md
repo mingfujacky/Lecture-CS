@@ -83,11 +83,11 @@ style: |
 | GB | Gigabyte | $2^{30}$| $10^9$ | The capacity of this DVD is 4.7 GB. |
 | TB | Terabyte | $2^{40}$ | $10^{12}$ | This high-capacity disk can store 20 TB of data. |
 
-# 二 / 八 / 十 / 十六 進位表示法
-- 十進位：0 ~ 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **45<sub>10</sub>**
-- 二進位(bin)：0, 1  &nbsp;&nbsp;  **101101<sub>2</sub>** 或是 0b101101
-- 八進位(oct)：0 ~ 7 &nbsp;&nbsp;  **55<sub>8</sub>** 或是 0o55
-- 十六進位(hex)：0 ~ 9, A ~ F &nbsp;&nbsp;  **2d<sub>16</sub>** 或是 0x2d
+# Binary / Octal / Decimal / Hexadecimal Representation
+- Decimal: 0 ~ 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **45<sub>10</sub>**
+- Binary (bin): 0, 1  &nbsp;&nbsp;  **101101<sub>2</sub>** or 0b101101
+- Octal (oct): 0 ~ 7 &nbsp;&nbsp;  **55<sub>8</sub>** or 0o55
+- Hexadecimal (hex): 0 ~ 9, A ~ F &nbsp;&nbsp;  **2d<sub>16</sub>** or 0x2d
 *-* A: 10
 *-* B: 11
 *-* C: 12
@@ -95,23 +95,22 @@ style: |
 *-* E: 14
 *-* F: 15
 
-# 二 / 八 / 十六進位表示法與轉換成十進位表示法
-- 十進位表示法: 523 = 5個100 + 2個10 + 3個1 = 5×10<sup>2</sup> + 2×10<sup>1</sup> + 3
-- 二進位表示法: 1000001011 = 1×2<sup>9</sup> + 1×2<sup>3</sup> + 1×2<sup>1</sup> + 1×2<sup>0</sup>
-- 八進位表示法: 1013 = 1×8<sup>3</sup> + 1×8<sup>1</sup> + 3×8<sup>0</sup>
-- 十六進位表示法: 20B = 2×16<sup>2</sup> + 11×8<sup>0</sup>
-
-- 以B為基數，則 d<sub>n</sub>d<sub>n-1</sub>...d<sub>2</sub>d<sub>1</sub>.r<sub>1</sub>r<sub>2</sub>...r<sub>m-1</sub>r<sub>m</sub> 表示的數：
+# Binary, Octal, and Hexadecimal Notation and Conversion to Decimal Notation
+- Decimal notation: 523 = 5×100 + 2×10 + 3×1 = 5×10<sup>2</sup> + 2×10<sup>1</sup> + 3x10<sup>0</sup>
+- Binary notation: 1000001011 = 1×2<sup>9</sup> + 1×2<sup>3</sup> + 1×2<sup>1</sup> + 1×2<sup>0</sup>
+- Octal notation: 1013 = 1×8<sup>3</sup> + 1×8<sup>1</sup> + 3×8<sup>0</sup>
+- Hexadecimal notation: 20B = 2×16<sup>2</sup> + 11×16<sup>0</sup>
+- The number represented by d<sub>n</sub>d<sub>n-1</sub>...d<sub>2</sub>d<sub>1</sub>.r<sub>1</sub>r<sub>2</sub>...r<sub>m-1</sub>r<sub>m</sub> with base B is:
 d<sub>n</sub>×B<sup>n-1</sup> + d<sub>n-1</sub>×B<sup>n-2</sup> + ... + d<sub>2</sub>×B<sup>1</sup> + d<sub>1</sub>×B<sup>0</sup> + r<sub>1</sub>×B<sup>-1</sup>+ r<sub>2</sub>×B<sup>-2</sup> + ... + r<sub>m-1</sub>×B<sup>-(m-1)</sup> + r<sub>m</sub>×B<sup>-m</sup>
 
-- <span class="blue-text">[Lab] 將 10110101.1101<sub>2</sub> 轉成十進位數 </span>
+- <span class="blue-text">[Lab] Convert 10110101.1101<sub>2</sub> to decimal </span>
 
-# 十進位表示法轉換成 二 / 八 / 十六進位表示法
-![bg right:50% w:600 數字編碼轉換](
+# Converting Decimal Notation to Binary / Octal / Hexadecimal Notation
+![bg right:50% w:600](
 https://docs.f5ezcode.in/~gitbook/image?url=https%3A%2F%2F3362868160-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fassets%252F-L_r09305cCOiVsKX4GC%252F-LdbAaNUSjLJ4JCj636w%252F-LdbBjSEjvD4kSdxDMv5%252F2.1.4.png%3Falt%3Dmedia%26token%3D47bd4afd-37cf-42f9-b0b8-da0c9f4ab929&width=768&dpr=2&quality=100&sign=56845e24&sv=1)
 
-<span class="blue-text">[Lab] 將 181<sub>10</sub> 轉成二進位 </span>
-<span class="blue-text">[Lab] 將 0.8125<sub>10</sub> 轉成二進位 </span>
+<span class="blue-text">[Lab] Convert 181<sub>10</sub> to binary </span>
+<span class="blue-text">[Lab] Convert 0.8125<sub>10</sub> to binary </span>
 
 # 二進位的循環小數
 - 雖然有限位數的二進位表示法，永遠無法精確地表示十進位的0.1，一般的情況下，可能就只好容許這種小誤差. 
