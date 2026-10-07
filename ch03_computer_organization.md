@@ -138,6 +138,7 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 
 # Main Memory Addressing
 - Each location in main memory has an address to access its contents
+- One dimensional; Random accessible; Access the content by the address (practically, also in binary)
 
 | Address | Content |
 |---|---|
@@ -146,7 +147,6 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 |0000 0000 0000 0010| 11110001 |
 |.....| ..... |
 |1111 1111 1111 1111| 01010101 |
-
 
 - Addresses are represented in 16 bits, with a maximum of 2<sup>16</sup> = 65,536 addresses
 
@@ -183,6 +183,9 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 - EEPROM (Electrically Erasable Programmable ROM): Erase electrically
 > Flash memory is essentially an evolution of EEPROM. It makes for mass-storage devices such as SSDs, USB flash drives, and memory cards.
 
+# Popular Memory Types
+![w:1000](asset/image/ch03_popular_memory_technology.png)
+
 # Beyond Von Neumann Architecture
 - We use bus (system bus) to illustrate the communication between CPU and main memory under Von Neumann architecture. It is a conceptual model to explain the transmission of address, control, and data . 
 - In reality, modern PC hardware has evolved into multiple specialized point-to-point interconnects, which are more efficient than a single system bus.
@@ -192,14 +195,14 @@ CPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 ![w:600](asset/image/ch03_modern_Intel_system_2.png)
 
 # Interconnection of Modern Intel System Architecture
-| Category | Interface | Connection | Purpose |
-|---|---|---|---|
-| **Memory Interface** | DDR4 / DDR5 | CPU ↔ DRAM | Memory access |
-| **Internal High-Speed Interconnect** | PCIe | CPU ↔ GPU, SSD | Internal devices |
-| **Direct Media Interface**| DMI | CPU ↔ Chipset | Chipset communication |
-| **Peripheral Interface** | PCIe | Chipset ↔ SSD, NIC | High-speed peripheral |
-| **Peripheral Interface** | USB | Chipset ↔ USB devices | Low-speed peripheral |
-| **Display Interface** | HDMI / DisplayPort | GPU ↔ Monitor | Video & Audio |
+| Category | Interface | Connection |
+|---|---|---|
+| **Memory Interface** | DDR4 / 5 | CPU ↔ DRAM |
+| **Internal High-Speed Interconnect** | PCIe | CPU↔GPU,SSD |
+| **Direct Media Interface**| DMI | CPU↔Chipset |
+| **Peripheral Interface** | PCIe | Chipset↔SSD,NIC |
+| **Peripheral Interface** | USB | Chipset↔USB devices |
+| **Display Interface** | HDMI / DisplayPort | GPU↔Monitor |
 
 
 # Acer Aspire XC-1860 桌上型電腦 

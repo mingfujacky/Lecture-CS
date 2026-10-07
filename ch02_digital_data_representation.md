@@ -76,9 +76,12 @@ Logical gate is an electronic circuit that performs logical operations on 0s and
 - Flip-flop is a circuit to store binary data; keep the state of output until the next excitement.
 - SR (Set-Reset) Flip-Flop
   - Has two input lines: set (x) and reset (y) and one output line (z).
-  - x = 1: set z to 1
-  - y = 1: reset z to 0
-  - x = y = 0: holds current state
+  - x = 1, y = 0: set z to 1
+  - x = 0, y = 1: reset z to 0
+  - x = 0, y = 0: holds current state
+
+# A Simple SR Flip-Flop Circuit
+![w:1200 sr-flip-flop](asset/image/ch02_flip_flop.png)
 
 # Bit Patterns
 - The bit pattern is a sequence of bits used by computers to store and represent data, like text, numbers, sound, or image.
@@ -98,17 +101,18 @@ Logical gate is an electronic circuit that performs logical operations on 0s and
 | GB | Gigabyte | $2^{30}$| $10^9$ | The capacity of this DVD is 4.7 GB. |
 | TB | Terabyte | $2^{40}$ | $10^{12}$ | This high-capacity disk can store 20 TB of data. |
 
+# Representing Numeric
+![w:1200 numeric](asset/image/ch02_represent_numberic.png)
+
+
 # Binary / Octal / Decimal / Hexadecimal Representation
 - Decimal: 0 ~ 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **45<sub>10</sub>**
 - Binary (bin): 0, 1  &nbsp;&nbsp;  **101101<sub>2</sub>** or 0b101101
 - Octal (oct): 0 ~ 7 &nbsp;&nbsp;  **55<sub>8</sub>** or 0o55
 - Hexadecimal (hex): 0 ~ 9, A ~ F &nbsp;&nbsp;  **2d<sub>16</sub>** or 0x2d
-*-* A: 10
-*-* B: 11
-*-* C: 12
-*-* D: 13
-*-* E: 14
-*-* F: 15
+*-* A: 10, B: 11, C: 12, D: 13, E: 14, F: 15
+
+- Binary is usually too long for human to remember. Binary to Hex is straightforward. 0010111010110101 → 2EB5
 
 # Binary, Octal, and Hexadecimal Notation and Conversion to Decimal Notation
 - Decimal notation: 523 = 5×100 + 2×10 + 3×1 = 5×10<sup>2</sup> + 2×10<sup>1</sup> + 3x10<sup>0</sup>
@@ -249,18 +253,18 @@ lem 7 + (-5). Consequently, if a machine were asked to subtract 5 (0101) from 7 
   - UTF-16 is used in Java and Windows.
   - UTF-32 is used by some UNIX systems.
 
-# ASCII 編碼方式
+# ASCII Encoding
 ASCII: American Standard Code for Information Interchange
-一個字元佔用一個byte, 使用其中的7個bit, most significant bit 是 0, 總共定義128個字元
-- 英文大小寫字母
-- 阿拉伯數字
-- 標點符號、括號以及其它符號
-- 控制字元，如響鈴，退格，換行，換頁，跳出資料通訊，退出鍵 
+Each character occupies one byte, using 7 bits, with the most significant bit being 0, defining 128 characters
+- English letters (upper & lower)
+- 0 ~ 9
+- Punctuation marks, parentheses and other symbols
+- Control characters, such as backspace, line feed,...
 ![bg right:50% w:500 ASCII](https://www.runoob.com/wp-content/uploads/2022/03/ascii-1-1.png)
 
-# Unicode 編碼方式
-Unicode用兩個byte來表示一個字元, 給每個字元定義一個唯一的編碼, 同一個字元, 不論是什麼平臺、不論是什麼程式語言都一樣的編碼。
-字元 |Unicode   
+# Unicode Encoding
+Unicode uses two bytes to represent a character, regardless of the platform or programming language.
+Character | Unicode   
 ------|:----
 H|00000000 01001000
 i|00000000 01101001
@@ -272,15 +276,14 @@ i|00000000 01101001
 [search unicode of a character](https://codepoints.net)
 ![w:800](asset/image/ch01_unicode_list.png)
 
-# Unicode 實現方式：UTF-8, -16, -32
-- Unicode 編碼系統可分為編碼方式和實現方式兩個層次
-- 每個字元的Unicode編碼確定。但是在實際傳輸過程中，由於不同系統平台的設計不一定一致，以及出於節省空間的目的，對Unicode編碼的實現方式有所不同。
-- Unicode的實現方式稱為Unicode Transformation Format(UTF)
+# Unicode Implementation: UTF-8, UTF-16, UTF-32
+- Unicode system has two parts: encoding and implementation
+- To save space in data transmission and storing, the implementation methods of Unicode encoding may vary in terms of system platforms, which we call **Unicode Transformation Format (UTF)**
 ![bg right:50% w:600](asset/image/ch01_UTF8_16_32.webp)
 
 # UTF-8
 - UTF-8 is a way to translate Unicode's code points into bytes for storage/transmission.
-- 為了節省空間，UTF-8優化Unicode的編碼, 用一至四個bytes對Unicode字元集的所有字元進行再編碼，以增加儲存及傳輸效率 ASCII (English): 1 byte, Latin extended: 2 bytes, Chinese / Japan / Korea: 3 bytes, Emoji / Rare used characters: 4 bytes
+- For the purpose of saving space, UTF-8 optimizes Unicode encoding, using one to four bytes to re-encode all Unicode characters, thereby increasing storage and transmission efficiency ASCII (English): 1 byte, Latin extended: 2 bytes, Chinese / Japan / Korea: 3 bytes, Emoji / Rare used characters: 4 bytes
 
 <style scoped>
 table {
@@ -288,7 +291,7 @@ table {
 }
 </style>
 
-字元 |UTF-8   
+Character |UTF-8   
 ------|:----
 H|01001000
 i|01101001
@@ -297,11 +300,31 @@ i|01101001
 好|11100101 10100101 10111101
 
 # Storing Image
+- Bit map techniques
+  - Pixel: picture element.
+  - Colors: RGB, HSV, etc.
+  - LCD, scanner, digital cameras, etc.
+- Vector techniques
+  - Scalable
+  - TrueType, Postscript, SVG (scalable vector graphics), etc.
+  - CAD, printers.
+# Storing a Black-and-White Photo  
 - Taking a black-and-white photo as an example, a small part of the photo records the gray scale (0~255) of each square, and each square can be represented by eight digits (eight zeros and 1s can have 256 combinations).
 - https://market.cloud.edu.tw/resources/video/1836100
 - Reference: [![Image bit map](https://i.ytimg.com/vi/mAMTXJJQBDI/default.jpg)](https://youtu.be/mAMTXJJQBDI?si=8OFtSegqQM9_s0S9)
 
-# Storing Sound
-
+# Storing Sound - Sampling
 ![w:400](asset/image/ch01_聲音編碼.png)
 [![Image bit map](https://i.ytimg.com/vi/_NJaoQUJtmo/mqdefault.jpg)](https://youtu.be/_NJaoQUJtmo?si=pPx1HRcV0QRbIIFF)
+
+# Storing Sound - MIDI
+- MIDI (Musical Instrument Digital Interface) does not contain sound. It contains instructions for playing music.
+- For example, MIDI can tell a computer:
+  - 🎹 Which note to play — C4
+  - ⏱️ When to start and stop
+  - 💪 How hard the key is pressed — Velocity
+  - 🎼 Which instrument to use — Piano, guitar, etc.
+  So, the same MIDI data can be played as a piano, violin, guitar, or other instrument.
+
+MIDI = Digital music score + playing instructions
+MP3/WAV = Recorded sound
