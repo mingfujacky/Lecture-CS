@@ -59,12 +59,26 @@ style: |
 # Bit
 - Bit (binary digit) is the most basic unit of information in computing and communication. 
 - Bit represents a logical state with one of two possible values like 0 or 1, true/false, yes/no, or on/off
-- Binary system is simple, logical and unambiguous, and it is easy to implement with digital electronic circuitry.
+- Binary system is simple, logical and unambiguous.
+- Binary operations are easy to implement with digital electronic circuitry.
 
 # Binary Operations and Logical Gates
+Logical gate is an electronic circuit that performs logical operations on 0s and 1s.
 ![w:500 logical operation and gate](asset/image/ch01_logical_operation_gate.png)
 
+# Logic Gate Help Make Arithmetic Circuit - Half Adder
+- Half adder is used to add two 1-bit inputs to generate sum and carry as outputs.
+  - Sum = A ⊕ B where A,B are the Inputs (XOR)
+  - Carry = A.B where A,B are the Inputs (AND)
+![w:500 half-adder](asset/image/ch02_half_adder.png)
 
+# Logic Gate Help Make Memory Circuit - Flip-Flop
+- Flip-flop is a circuit to store binary data; keep the state of output until the next excitement.
+- SR (Set-Reset) Flip-Flop
+  - Has two input lines: set (x) and reset (y) and one output line (z).
+  - x = 1: set z to 1
+  - y = 1: reset z to 0
+  - x = y = 0: holds current state
 
 # Bit Patterns
 - The bit pattern is a sequence of bits used by computers to store and represent data, like text, numbers, sound, or image.
