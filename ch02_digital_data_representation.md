@@ -248,10 +248,10 @@ lem 7 + (-5). Consequently, if a machine were asked to subtract 5 (0101) from 7 
 
 # Storing Text
 - **ASCII**: In 1963, the American Standards Association (ASA) published ASCII (American Standard Code for Information Interchange) is the most popular public standard today.
-- **Unicode**: developed by the Universal Code Development Committee of the United States from 1988 to 1991, has become an ISO certification standard (ISO 10646). Unicode has developed the following encoding methods:
-  - UTF-8 is the most commonly used information network in the world.
-  - UTF-16 is used in Java and Windows.
-  - UTF-32 is used by some UNIX systems.
+- **Unicode**: Unicode is a universal character encoding standard maintained by the Unicode Consortium. Its first version was published in 1991. Unicode is closely coordinated with the international standard ISO/IEC 10646 and defines three encoding forms:
+  - UTF-8 is the most commonly used character encoding on the internet.
+  - UTF-16 is used to represent strings in Java and by many Windows APIs.
+  - UTF-32 is used internally by some UNIX/Linux systems (such as for wide-character string processing).
 
 # ASCII Encoding
 ASCII: American Standard Code for Information Interchange
@@ -299,15 +299,19 @@ i|01101001
 你|11100100 10111101 10100000
 好|11100101 10100101 10111101
 
-# Storing Image
-- Bit map techniques
-  - Pixel: picture element.
-  - Colors: RGB, HSV, etc.
-  - LCD, scanner, digital cameras, etc.
-- Vector techniques
-  - Scalable
-  - TrueType, Postscript, SVG (scalable vector graphics), etc.
-  - CAD, printers.
+# Storing Image - Bit map techniques
+- An image is represented as a grid of pixels. 
+- Pixel is short for “picture element.”
+- Color models: RGB, HSV, etc.
+- Display: bitmap images can be displayed on LCD screens.
+- Capture: scanners and digital cameras produce bitmap images.
+
+# Storing Image - Vector techniques
+- Represent images using geometric shapes, such as lines and curves.
+- Can be scaled without losing image quality.
+- Examples: SVG (Scalable Vector Graphics), TrueType font (TTF).
+- Applications: CAD, graphic design, and printing.
+
 # Storing a Black-and-White Photo  
 - Taking a black-and-white photo as an example, a small part of the photo records the gray scale (0~255) of each square, and each square can be represented by eight digits (eight zeros and 1s can have 256 combinations).
 - https://market.cloud.edu.tw/resources/video/1836100
