@@ -114,15 +114,26 @@ Logical gate is an electronic circuit that performs logical operations on 0s and
 
 - Binary is usually too long for human to remember. Binary to Hex is straightforward. 0010111010110101 → 2EB5
 
-# Binary, Octal, and Hexadecimal Notation and Conversion to Decimal Notation
-- Decimal notation: 523 = 5×100 + 2×10 + 3×1 = 5×10<sup>2</sup> + 2×10<sup>1</sup> + 3x10<sup>0</sup>
-- Binary notation: 1000001011 = 1×2<sup>9</sup> + 1×2<sup>3</sup> + 1×2<sup>1</sup> + 1×2<sup>0</sup>
-- Octal notation: 1013 = 1×8<sup>3</sup> + 1×8<sup>1</sup> + 3×8<sup>0</sup>
-- Hexadecimal notation: 20B = 2×16<sup>2</sup> + 11×16<sup>0</sup>
+# Binary, Octal, and Hexadecimal Notation and Conversion to Decimal Notation (1/2)
+- Decimal notation: 523<sub>10</sub> = 5×100 + 2×10 + 3×1 = 5×10<sup>2</sup> + 2×10<sup>1</sup> + 3x10<sup>0</sup>
+- Binary notation: 1000001011<sub>2</sub> = 1×2<sup>9</sup> + 1×2<sup>3</sup> + 1×2<sup>1</sup> + 1×2<sup>0</sup>
+- Octal notation: 1013<sub>8</sub> = 1×8<sup>3</sup> + 1×8<sup>1</sup> + 3×8<sup>0</sup>
+- Hexadecimal notation: 20B<sub>16</sub> = 2×16<sup>2</sup> + 11×16<sup>0</sup>
+
+
+# Binary, Octal, and Hexadecimal Notation and Conversion to Decimal Notation (2/2)
+- Decimal notation: 0.123<sub>10</sub> = 1×10<sup>-1</sup> + 2×10<sup>-2</sup> + 3×10<sup>-3</sup>
+- Binary notation: 0.101<sub>2</sub> = 1×2<sup>-1</sup> + 0×2<sup>-2</sup> + 1×2<sup>-3</sup>
+
+
+
 - The number represented by d<sub>n</sub>d<sub>n-1</sub>...d<sub>2</sub>d<sub>1</sub>.r<sub>1</sub>r<sub>2</sub>...r<sub>m-1</sub>r<sub>m</sub> with base B is:
 d<sub>n</sub>×B<sup>n-1</sup> + d<sub>n-1</sub>×B<sup>n-2</sup> + ... + d<sub>2</sub>×B<sup>1</sup> + d<sub>1</sub>×B<sup>0</sup> + r<sub>1</sub>×B<sup>-1</sup>+ r<sub>2</sub>×B<sup>-2</sup> + ... + r<sub>m-1</sub>×B<sup>-(m-1)</sup> + r<sub>m</sub>×B<sup>-m</sup>
 
 - <span class="blue-text">[Lab] Convert 10110101.1101<sub>2</sub> to decimal </span>
+
+
+
 
 # Converting Decimal Notation to Binary / Octal / Hexadecimal Notation
 ![bg right:50% w:600](
